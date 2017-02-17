@@ -20,3 +20,10 @@ drwxr-xr-x  2 enrico.jano StafCS 4096 Feb 13 19:38 week09
 drwxr-xr-x  2 enrico.jano StafCS 4096 Feb 13 19:38 week10
 drwxr-xr-x  2 enrico.jano StafCS 4096 Feb 13 19:39 xtra
 /home/fasilkom/mahasiswa/e/enrico.jano/os171/week01
+Today is 
+Today is 
+Today is 
+Today is 
+Today is 17 Feb 2017 at 18:01:29
+Today is 17 Feb 2017 at 18:01:50
+Todak is 17 Feb 2017 at 18:06:32

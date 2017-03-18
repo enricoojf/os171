@@ -1,0 +1,45 @@
+a.
+ scope variable yang diinisialisasi berbeda yaitu :
+ char varchar0='a';
+ char varchar1='b';
+ char varchar2='c';
+ char varchar3='d';
+pada global-char variable tersebut di iniasi di luar main() method. sedangkan pada local-char variable tersebut di letakan didalam main() method
+ 
+b.
+karena local variable disimpan didalam stack, sedangkan global variable disimpan dalam memory yang ditentukan compiler saat melakukan compile
+
+c. 
+local variabel diinisiasi dalam function block. local variable hanya dapat diakses oleh perintah-perintah yang berada didalam function block dimana
+local variable tersebut di definisikan.
+
+global variable didefinsikan diluar function block dari seluruh program. dapat diakses oleh semua function block yang ada dalam program
+
+2. 
+a. 
+O_CREATE : akan membuat file baru jika file yang ingin dibuka tidak ada
+O_RDWR : memberikan akses read dan write ketika membuka file
+
+b.
+S_IRWXU : user / file owner mempunyai akses untuk action read, write dan executeS_IRGRP : group mempunyai akses untuk action read
+S_IWGRP : group mempunyai akses untuk action write
+S_IROTH : others mempunyai akses untuk action read
+
+c.
+ketika memanggil fungsi open() method tersebut akan mengembalikan suatu file desciprtor yang menyimpan referensi ke file yang dibuka. file descriptor tersebut berguna untuk melakukan system call lainya (read(), write(), etc)
+
+close() berfungsi untuk menutup file descriptor, sehingga tidak lagi menyimpan referensi ke file yang sedang dibuka dan membuat tidak dapat mengakses file tersebut. ketika close() dipanggil, fungsi akan mengembalikan nilai -1 jika gagal melakukan operasi dan 0 jika sukses.
+
+3.
+pada file write.c 
+variable fd1 = menyimpan suatu referensi ke file demo-file5.txt
+         fd2 = jug menyimpan referensi ke file demo-file5.txt
+
+fd1 dan fd2 memiliki nilai integer yang berbeda tetapi menyimpan referensi file yang sama. karena ketika memanggil open() integer yang dikembalikan akan disimpan dalam  system-wide table yang menghubungkan ke referensi file yang dituju.
+
+operasi write() menerima file descriptor, buffer(yaitu string yg di gunakan), dan suatu nilai integer (count) sebagai argument.
+
+perintah write akan menuliskan buffer yang diterima ke file yang di tuju yang disimpan referensinya didalam file descriptor. argument count berfungsi sebagai upper limit jika terjadi masalah dalam menulis ke file (misal space tidak mencukupi, terjadi interupsi, dll)
+
+
+
